@@ -124,7 +124,7 @@ void oled_render_logo(void) {
 	0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x03
 };
     oled_write_raw_P(mb_logo, sizeof(mb_logo));
-    //oled_set_cursor(oled_max_chars()/2,oled_max_lines()/2);
-    //oled_write_P(PSTR("R2G"), false);
+    oled_set_cursor(oled_max_chars()/5,oled_max_lines()/3);
+    oled_write_P(PSTR("Sejersen"), false);
 }
 #endif
